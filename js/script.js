@@ -3,17 +3,6 @@ $(function() {
     convertToOffcanvas();
   }).trigger('resize');
 
-  const heroSlider = new Swiper('.hero_slider', {
-    loop: true,
-    speed: 500,
-    spaceBetween: 10,
-    effect: "fade",
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
-  });
-
   $('.navbar-nav a').each(function() {
     if ($(this).prop('href') == window.location.href) {
       $(this).addClass('active');
