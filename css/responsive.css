@@ -1,0 +1,93 @@
+/*=================================
+=            Container            =
+=================================*/
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+
+/*=====  End of Container  ======*/
+
+
+/*=============================================
+=            Custom responsive Css            =
+=============================================*/
+
+@media (max-width: 992px) {
+  .navigation {
+    max-width: 300px;
+  }
+
+  .navigation .offcanvas-body {
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 7px 10px;
+    border-radius: 4px;
+    text-align: center;
+    color: var(--text);
+    border-bottom: none;
+  }
+
+  .nav-link:where(:hover, .active) {
+    background: var(--primary);
+    color: var(--white) !important;
+  }
+
+  .navbar-nav,
+  .nav-item {
+    grid-gap: 6px;
+    flex-direction: column;
+  }
+
+  .nav-item:after {
+    content: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero_slide {
+    margin: 0;
+  }
+
+  .logo {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero .arrows{
+    display: none;
+  }
+}
+
+/*=====  End of Custom responsive Css  ======*/
