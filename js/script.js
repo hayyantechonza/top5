@@ -10,6 +10,8 @@ $(function() {
   });
 
   printAlphabets();
+
+  // $("#couponModal").modal("show");
 });
 
 const convertToOffcanvas = () => {

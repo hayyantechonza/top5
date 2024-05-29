@@ -316,6 +316,7 @@ h6.heading {
 .btn {
   height: 40px;
   display: flex;
+  grid-gap: 8px;
   flex: 0 0 auto;
   padding: 10px 15px;
   border-radius: 8px;
@@ -330,13 +331,6 @@ h6.heading {
   background-color: var(--primary-dark) !important;
 }
 
-
-.btn:active {
-  color: var(--white) !important;
-  background: var(--primary) !important;
-  border-color: var(--primary) !important;
-}
-
 .btn.light {
   color: var(--primary-dark);
   background: var(--primary-light);
@@ -345,6 +339,7 @@ h6.heading {
 .btn.light:where(:hover, .active) {
   color: var(--white) !important;
   background: var(--primary) !important;
+  border-color: var(--primary);
 }
 
 .btn.outline {
@@ -356,6 +351,13 @@ h6.heading {
 .btn.outline:where(:hover, .active) {
   background: var(--primary) !important;
 }
+
+.btn:active {
+  color: var(--white) !important;
+  background: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+}
+
 
 .btn.secondary {
   color: var(--white);
@@ -370,6 +372,7 @@ h6.heading {
 .btn.secondary.light:where(:hover, .active) {
   color: var(--white) !important;
   background: var(--secondary) !important;
+  border-color: var(--secondary);
 }
 
 .btn.secondary.outline {
@@ -387,12 +390,15 @@ h6.heading {
   background: var(--secondary-dark) !important;
 }
 
-.btn span {
-  line-height: 1.2;
+
+.btn.secondary:active {
+  color: var(--white) !important;
+  background: var(--secondary-dark) !important;
+  border-color: var(--secondary-dark) !important;
 }
 
-.btn:has(:not(span)) {
-  padding: 10px;
+.btn span {
+  line-height: 1.2;
 }
 
 /*----------  Card  ----------*/
@@ -554,6 +560,31 @@ h6.heading {
 
 .jumbotron a:hover {
   color: var(--secondary-dark);
+}
+
+.nav-tabs {
+  width: 100%;
+  display: flex;
+  grid-gap: 10px;
+  border-bottom: 0;
+}
+
+.nav-tabs .nav-link {
+  border-radius: 8px;
+  padding: 8px 18px;
+  color: var(--text);
+  background: var(--gray-100);
+  border: 1px solid var(--gray-150);
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--white) !important;
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+
+.tab-content {
+  padding: 20px 0;
 }
 
 /*=====  End of Bootstrap  ======*/
@@ -760,38 +791,24 @@ header {
   position: absolute;
 }
 
-nav:has(.nav-tabs) {
+.top5_categories nav:has(.nav-tabs) {
   overflow: hidden;
   position: relative;
   border-radius: 8px;
 }
 
-.nav-tabs {
+.top5_categories .nav-tabs {
   bottom: 0;
-  width: 100%;
-  display: flex;
-  grid-gap: 10px;
   position: absolute;
-  border-bottom: 0;
   padding-inline: 20px;
+  justify-content: center;
 }
 
-.nav-tabs .nav-link {
-  flex: 1;
-  padding: 10px;
-  color: var(--text);
-  border: none !important;
+.top5_categories .nav-tabs .nav-link {
+  border-radius: 8px 8px 0 0;
+  border: none;
   background: var(--white);
-  border-radius: 4px 4px 0 0;
-}
-
-.nav-tabs .nav-link.active {
-  color: var(--white) !important;
-  background: var(--secondary) !important;
-}
-
-.tab-content {
-  padding: 20px 0;
+  padding: 10px 30px;
 }
 
 .categories {
@@ -1120,5 +1137,218 @@ footer .logo {
   color: var(--gray-300);
 }
 
+/*----------  Single store  ----------*/
+.head_of_store {
+  display: flex;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.single_store_img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  border: 2px solid var(--gray-150);
+}
+
+.single_store_img img {
+  object-fit: contain;
+}
+
+.single_str_head_content {
+  display: flex;
+  grid-gap: 5px;
+  flex-direction: column;
+}
+
+.single_str_title {
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: clamp(24px, 2vw, 26px);
+}
+
+.promo-card {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: var(--gray-50);
+  border: 1px solid var(--gray-150);
+}
+
+.promo-image img {
+  height: 80px;
+  max-width: 80px;
+  border-radius: 6px;
+  object-fit: contain;
+  border: 1px solid var(--gray-150);
+  background: var(--white);
+}
+
+.promo-details {
+  flex-grow: 1;
+}
+
+.promo-footer {
+  display: flex;
+  margin-top: 20px;
+  padding-top: 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--gray-150);
+}
+
+.expiry-date {
+  color: var(--bs-danger);
+}
+
+.promo-footer .store-info {
+  display: flex;
+  align-items: center;
+}
+
+.promo-footer .store-info span {
+  font-weight: 500;
+  font-size: clamp(12px, 2vw, 14px);
+}
+
+.promo-footer .store-info i {
+  margin-right: 6px;
+}
+
+.str_smll_img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  border: 1px solid var(--gray-150);
+  background: var(--white);
+}
+
+.str_smll_img img {
+  object-fit: contain;
+}
+
+.pop_str {
+  display: flex;
+  align-items: center;
+  grid-gap: 15px;
+}
+
+.pop_str h5 {
+  font-size: clamp(16px, 2vw, 18px);
+  font-weight: 700;
+}
+
+.str_pop_content p {
+  color: var(--gray-250);
+  font-weight: 500;
+  font-size: clamp(12px, 2vw, 14px);
+  margin-top: 2px;
+}
+
+.modal-md {
+  --bs-modal-width: 600px;
+}
+
+.modal-header-custom {
+  background: linear-gradient(147deg, var(--primary) 0%,
+    var(--primary-dark) 74%);
+  color: white;
+  text-align: center;
+  padding: 35px 30px 50px 30px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  grid-gap: 10px;
+}
+
+.modal-body-custom {
+  background-color: white;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.coupon-code {
+  font-weight: 500;
+  margin-top: 12px;
+  border-radius: 8px;
+  padding: 10px 15px 10px 20px;
+  color: var(--white);
+  display: flex;
+  text-transform: uppercase;
+  background-color: var(--primary);
+  font-size: clamp(14px, 2vw, 16px);
+  border: 2px dashed var(--primary-light);
+  grid-gap: 10px;
+}
+
+.coupon-code i {
+  color: var(--secondary);
+}
+
+.print-coupon {
+  display: block;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: transparent;
+}
+
+.btn-website {
+  margin-top: calc(-1rem - 22.5px);
+
+}
+
+.deal-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+}
+
+.deal-info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: contain;
+  border: 1px solid var(--gray-200);
+}
+
+.modal-content {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.modal-title {
+  line-height: 1.2;
+  font-size: clamp(20px, 2vw, 24px);
+  font-weight: 500;
+}
+
+.modal-header-custom p {
+  color: var(--primary-light);
+}
+
+.close-custom {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  justify-content: center;
+}
+
+.close-custom i {
+  font-size: 24px;
+  color: var(--primary-light);
+}
+
+.deal-info span {
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: 500;
+  color: var(--text);
+}
 
 /*=====  End of Custom css  ======*/

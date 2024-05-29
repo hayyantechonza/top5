@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Top5 Coupons deals website</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Favicon -->
+  <link rel="icon" href="images/brand/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+  <!--============================
+         =            Header            =
+         =============================-->
+  <header class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="header_wrapper">
+            <a href="index.html" class="logo me-4">
+              <img src="./images/brand/logo-footer.svg" alt="logo" />
+            </a>
+            <nav id="menu" class="navigation h-100 d-flex align-items-center">
+              <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="stores.html" class="nav-link">stores</a></li>
+                  <li class="nav-item"><a href="categories.html" class="nav-link">categories</a></li>
+                </ul>
+              </div>
+            </nav>
+            <div class="search_box ms-auto">
+              <label for="search" class="search_bar">
+                <input type="text" autocomplete="off" class="form-control" id="search" placeholder="Search Store" />
+              </label>
+              <button class="search_btn">
+                <i class="ph-duotone ph-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="header_btn d-flex gap-2">
+              <a href="contact.html" class="btn secondary d-lg-flex d-none">
+                <span>Contact us</span>
+              </a>
+              <button data-bs-toggle="offcanvas" data-bs-target="#menu" class="btn secondary d-lg-none d-flex">
+                <i class="ph ph-list"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--====  End of Header  ====-->
+  <!--==========================
+         =            Main            =
+         ===========================-->
+  <main>
+    <section class="single_store">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="head_of_store">
+              <figure class="single_store_img">
+                <img src="images/stores/store_1.webp" alt="">
+              </figure>
+              <div class="single_str_head_content">
+                <h3 class="single_str_title">Bookstone Coupon - Jul 2024</h3>
+                <p class="single_str_desc">When browsing through Offers on our site, you might come across a button like this one</p>
+              </div>
+            </div>
+            <div class="mt-4">
+              <nav>
+                <div class="nav nav-tabs">
+                  <button class="btn secondary light active" data-bs-toggle="tab" data-bs-target="#all-offers">All Offers</button>
+                  <button class="btn secondary light" data-bs-toggle="tab" data-bs-target="#deals">Deals</button>
+                  <button class="btn secondary light" data-bs-toggle="tab" data-bs-target="#coupons">Coupons</button>
+                </div>
+              </nav>
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="all-offers">
+                  <h4 class="heading">All offers</h4>
+                  <div class="row g-4">
+                    <div class="col-12">
+                      <div class="promo-card d-flex flex-column flex-md-row">
+                        <div class="promo-image mb-3 mb-md-0 me-md-3">
+                          <img src="images/stores/store_3.webp" alt="Adanola Logo">
+                        </div>
+                        <div class="promo-details">
+                          <h5 class="font-weight-bold">Get 20% Off Your Next Purchase With Code Save20!</h5>
+                          <p>Use promo code SAVE20 at checkout to enjoy a 20% discount on your entire order. Hurry, this offer expires soon!</p>
+                          <div class="promo-footer">
+                            <div class="str_detail d-flex align-items-center gap-3 row-gap-1 flex-wrap flex-wrap">
+                              <div class="store-info">
+                                <i class="ph-duotone ph-storefront"></i>
+                                <span>Store Name</span>
+                              </div>
+                              <div class="store-info expiry-date">
+                                <i class="ph-duotone ph-clock-countdown"></i>
+                                <span>Expiry: 1/9/2024</span>
+                              </div>
+                            </div>
+                            <a href="#" class="btn secondary" data-bs-toggle="modal" data-bs-target="#couponModal">
+                              <span>Get Code</span>
+                              <i class="ph-duotone ph-tag"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="promo-card d-flex flex-column flex-md-row">
+                        <div class="promo-image mb-3 mb-md-0 me-md-3">
+                          <img src="images/stores/store_4.webp" alt="Store Logo">
+                        </div>
+                        <div class="promo-details">
+                          <h5 class="font-weight-bold">Save 15% on Select Items With Code Save15!</h5>
+                          <p>Use promo code SAVE15 at checkout to save 15% on select items. Limited time offer!</p>
+                          <div class="promo-footer">
+                            <div class="str_detail d-flex align-items-center gap-3 row-gap-1 flex-wrap flex-wrap">
+                              <div class="store-info">
+                                <i class="ph-duotone ph-storefront"></i>
+                                <span>Store Name</span>
+                              </div>
+                              <div class="store-info expiry-date">
+                                <i class="ph-duotone ph-clock-countdown"></i>
+                                <span>Expiry: 2/10/2024</span>
+                              </div>
+                            </div>
+                            <a href="#" class="btn secondary" data-bs-toggle="modal" data-bs-target="#couponModal">
+                              <span>Get Code</span>
+                              <i class="ph-duotone ph-tag"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="promo-card d-flex flex-column flex-md-row">
+                        <div class="promo-image mb-3 mb-md-0 me-md-3">
+                          <img src="images/stores/store_5.webp" alt="Store Logo">
+                        </div>
+                        <div class="promo-details">
+                          <h5 class="font-weight-bold">50% Off on Clearance Items!</h5>
+                          <p>Grab up to 50% off on clearance items. No code needed. Shop now!</p>
+                          <div class="promo-footer">
+                            <div class="str_detail d-flex align-items-center gap-3 row-gap-1 flex-wrap flex-wrap">
+                              <div class="store-info">
+                                <i class="ph-duotone ph-storefront"></i>
+                                <span>Store Name</span>
+                              </div>
+                              <div class="store-info expiry-date">
+                                <i class="ph-duotone ph-clock-countdown"></i>
+                                <span>Expiry: 3/11/2024</span>
+                              </div>
+                            </div>
+                            <a href="#" class="btn secondary" data-bs-toggle="modal" data-bs-target="#couponModal">
+                              <span>Shop Now</span>
+                              <i class="ph-duotone ph-shopping-cart"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="promo-card d-flex flex-column flex-md-row">
+                        <div class="promo-image mb-3 mb-md-0 me-md-3">
+                          <img src="images/stores/store_6.webp" alt="Store Logo">
+                        </div>
+                        <div class="promo-details">
+                          <h5 class="font-weight-bold">Buy One Get One Free!</h5>
+                          <p>Buy one item and get another one free. Limited time offer. No code needed!</p>
+                          <div class="promo-footer">
+                            <div class="str_detail d-flex align-items-center gap-3 row-gap-1 flex-wrap flex-wrap">
+                              <div class="store-info">
+                                <i class="ph-duotone ph-storefront"></i>
+                                <span>Store Name</span>
+                              </div>
+                              <div class="store-info expiry-date">
+                                <i class="ph-duotone ph-clock-countdown"></i>
+                                <span>Expiry: 4/12/2024</span>
+                              </div>
+                            </div>
+                            <a href="#" class="btn secondary" data-bs-toggle="modal" data-bs-target="#couponModal">
+                              <span>Shop Now</span>
+                              <i class="ph-duotone ph-shopping-cart"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="deals">
+                  <h4 class="heading">Deals</h4>
+                  <div class="row g-4">
+                    <div class="col-12">
+                      <div class="promo-card d-flex flex-column flex-md-row">
+                        <div class="promo-image mb-3 mb-md-0 me-md-3">
+                          <img src="images/stores/store_5.webp" alt="Store Logo">
+                        </div>
+                        <div class="promo-details">
+                          <h5 class="font-weight-bold">50% Off on Clearance Items!</h5>
+                          <p>Grab up to 50% off on clearance items. No code needed. Shop now!</p>
+                          <div class="promo-footer">
+                            <div class="str_detail d-flex align-items-center gap-3 row-gap-1 flex-wrap flex-wrap">
+                              <div class="store-info">
+                                <i class="ph-duotone ph-storefront"></i>
+                                <span>Store Name</span>
+                              </div>
+                              <div class="store-info expiry-date">
+                                <i class="ph-duotone ph-clock-countdown"></i>
+                                <span>Expiry: 3/11/2024</span>
+                              </div>
+                            </div>
+                            <a href="#" class="btn secondary" data-bs-toggle="modal" data-bs-target="#couponModal">
+                              <span>Shop Now</span>
+                              <i class="ph-duotone ph-shopping-cart"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="promo-card d-flex flex-column flex-md-row">
+                        <div class="promo-image mb-3 mb-md-0 me-md-3">
+                          <img src="images/stores/store_6.webp" alt="Store Logo">
+                        </div>
+                        <div class="promo-details">
+                          <h5 class="font-weight-bold">Buy One Get One Free!</h5>
+                          <p>Buy one item and get another one free. Limited time offer. No code needed!</p>
+                          <div class="promo-footer">
+                            <div class="str_detail d-flex align-items-center gap-3 row-gap-1 flex-wrap flex-wrap">
+                              <div class="store-info">
+                                <i class="ph-duotone ph-storefront"></i>
+                                <span>Store Name</span>
+                              </div>
+                              <div class="store-info expiry-date">
+                                <i class="ph-duotone ph-clock-countdown"></i>
+                                <span>Expiry: 4/12/2024</span>
+                              </div>
+                            </div>
+                            <a href="#" class="btn secondary" data-bs-toggle="modal" data-bs-target="#couponModal">
+                              <span>Shop Now</span>
+                              <i class="ph-duotone ph-shopping-cart"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="coupons">
+                  <h4 class="heading">Coupons</h4>
+                  <div class="row g-4">
+                    <div class="col-12">
+                      <div class="promo-card d-flex flex-column flex-md-row">
+                        <div class="promo-image mb-3 mb-md-0 me-md-3">
+                          <img src="images/stores/store_7.webp" alt="Store Logo">
+                        </div>
+                        <div class="promo-details">
+                          <h5 class="font-weight-bold">Get 10% Off With Code Save10!</h5>
+                          <p>Use promo code SAVE10 at checkout to enjoy a 10% discount on your order. Offer valid for a limited time.</p>
+                          <div class="promo-footer">
+                            <div class="str_detail d-flex align-items-center gap-3 row-gap-1 flex-wrap flex-wrap">
+                              <div class="store-info">
+                                <i class="ph-duotone ph-storefront"></i>
+                                <span>Store Name</span>
+                              </div>
+                              <div class="store-info expiry-date">
+                                <i class="ph-duotone ph-clock-countdown"></i>
+                                <span>Expiry: 5/13/2024</span>
+                              </div>
+                            </div>
+                            <a href="#" class="btn secondary" data-bs-toggle="modal" data-bs-target="#couponModal">
+                              <span>Get Code</span>
+                              <i class="ph-duotone ph-tag"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="promo-card d-flex flex-column flex-md-row">
+                        <div class="promo-image mb-3 mb-md-0 me-md-3">
+                          <img src="images/stores/store_8.webp" alt="Store Logo">
+                        </div>
+                        <div class="promo-details">
+                          <h5 class="font-weight-bold">20% Off on Orders Over $50!</h5>
+                          <p>Use promo code SAVE20OVER50 at checkout to save 20% on orders over $50. Limited time offer!</p>
+                          <div class="promo-footer">
+                            <div class="str_detail d-flex align-items-center gap-3 row-gap-1 flex-wrap flex-wrap">
+                              <div class="store-info">
+                                <i class="ph-duotone ph-storefront"></i>
+                                <span>Store Name</span>
+                              </div>
+                              <div class="store-info expiry-date">
+                                <i class="ph-duotone ph-clock-countdown"></i>
+                                <span>Expiry: 6/14/2024</span>
+                              </div>
+                            </div>
+                            <a href="#" class="btn secondary" data-bs-toggle="modal" data-bs-target="#couponModal">
+                              <span>Get Code</span>
+                              <i class="ph-duotone ph-tag"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="sidebar">
+              <div class="row g-3">
+                <div class="col-12">
+                  <h5 class="heading">Popular stores</h5>
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <a href="#" class="pop_str">
+                        <figure class="str_smll_img">
+                          <img src="images/stores/store_1.webp" alt="">
+                        </figure>
+                        <div class="str_pop_content">
+                          <h5>Amazon</h5>
+                          <p>10% off on electronics</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-12">
+                      <a href="#" class="pop_str">
+                        <figure class="str_smll_img">
+                          <img src="images/stores/store_2.webp" alt="">
+                        </figure>
+                        <div class="str_pop_content">
+                          <h5>eBay</h5>
+                          <p>20% off on fashion items</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-12">
+                      <a href="#" class="pop_str">
+                        <figure class="str_smll_img">
+                          <img src="images/stores/store_3.webp" alt="">
+                        </figure>
+                        <div class="str_pop_content">
+                          <h5>Walmart</h5>
+                          <p>15% off on groceries</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-12">
+                      <a href="#" class="pop_str">
+                        <figure class="str_smll_img">
+                          <img src="images/stores/store_4.webp" alt="">
+                        </figure>
+                        <div class="str_pop_content">
+                          <h5>Target</h5>
+                          <p>Buy 1 Get 1 Free on toys</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-12">
+                      <a href="#" class="pop_str">
+                        <figure class="str_smll_img">
+                          <img src="images/stores/store_5.webp" alt="">
+                        </figure>
+                        <div class="str_pop_content">
+                          <h5>Best Buy</h5>
+                          <p>5% off on all orders</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-12">
+                      <a href="#" class="pop_str">
+                        <figure class="str_smll_img">
+                          <img src="images/stores/store_6.webp" alt="">
+                        </figure>
+                        <div class="str_pop_content">
+                          <h5>Home Depot</h5>
+                          <p>Free shipping on orders over $50</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- modal -->
+    <div class="modal fade" id="couponModal" data-bs-backdrop="static">
+      <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header modal-header-custom">
+            <button type="button" class="close close-custom" data-bs-dismiss="modal" aria-label="Close">
+              <i class="ph-duotone ph-x-circle"></i>
+            </button>
+            <h5 class="modal-title">Get 20% Off Your Next Purchase With Code Save20!</h5>
+            <div class="coupon-code">
+              <span>no coupon is required</span>
+              <i class="ph-fill ph-check-circle"></i>
+            </div>
+            <p>Code is copied. Use code on site.</p>
+          </div>
+          <div class="modal-body modal-body-custom">
+            <button type="button" class="btn secondary btn-website">
+              <span>Go to Website</span>
+            </button>
+            <p class="deal-info">Use promo code SAVE20 at checkout to enjoy a 20% discount on your entire order. Hurry, this offer expires soon!</p>
+            <div class="deal-info">
+              <img src="images/stores/store_3.webp" alt="Flipkart logo">
+              <span>Flipkart</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--====  End of Main  ====-->
+  <!--============================
+         =            Footer            =
+         =============================-->
+  <footer class="pt-5 pb-3 mt-4">
+    <div class="container">
+      <div class="row border-bottom mb-5 pb-4">
+        <div class="col-6">
+          <a href="index.html" class="logo">
+            <img src="images/brand/logo-footer.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="col-6">
+          <div class="social_link">
+            <a href="#">
+              <i class="ph-duotone ph-facebook-logo"></i>
+            </a>
+            <a href="#">
+              <i class="ph-duotone ph-instagram-logo"></i>
+            </a>
+            <a href="#">
+              <i class="ph-duotone ph-x-logo"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-12">
+          <h5 class="footer_heading">Quick links</h5>
+          <ul class="footer_links">
+            <li><a href="#">deals</a></li>
+            <li><a href="#">fashion</a></li>
+            <li><a href="#">product spotlight</a></li>
+            <li><a href="#">food & beverage</a></li>
+            <li><a href="#">technology</a></li>
+            <li><a href="#">the latest</a></li>
+            <li><a href="#">health & fitness</a></li>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">ranked reviews</a></li>
+            <li><a href="#">home products</a></li>
+            <li><a href="#">impressum</a></li>
+            <li><a href="#">beauty</a></li>
+            <li><a href="#">pets</a></li>
+            <li><a href="#">life</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <h5 class="footer_heading">Disclaimer</h5>
+          <p class="footer_text">This website does not provide medical advice. It is important to consult your own doctor for personalized guidance. The author cannot be held liable for any misunderstanding or misuse of the information on this site. Please note that the US Food and Drug Administration has not reviewed the content here. This information is not intended to diagnose, treat, cure, or prevent any disease.</p>
+        </div>
+        <div class="col-md-6">
+          <h5 class="footer_heading">Privacy Policy</h5>
+          <p class="footer_text">Other marks contained on this website are the property of their respective owners. Top5 is independent comparison and review website may contain references to products from one or more of Tops advertisers. Top5 is a free to use website is supported through compensation when click on links to products. Please read our Privacy Policy and Terms of Use.</p>
+        </div>
+      </div>
+      <div class="row border-top pt-3 mt-4">
+        <p class="copyright"> &copy; 2024 Top5 | All rights reserved | Created by Hayyan Ali</p>
+      </div>
+    </div>
+  </footer>
+  <!--====  End of Footer  ====-->
+  <!-- Scripts Files -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/phosphor-icons.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
